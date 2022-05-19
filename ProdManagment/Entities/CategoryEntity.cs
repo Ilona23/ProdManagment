@@ -8,7 +8,7 @@
         //  [Column(TypeName = "varchar(200)")]
         // [Column(TypeName = "decimal(5, 2)")]
         public Guid Id { get; set; }
-        
+        // rame komentari
         public string Name { get; set; }
 
         public string Code { get; set; }
