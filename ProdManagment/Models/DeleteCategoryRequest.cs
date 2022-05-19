@@ -1,6 +1,6 @@
 ﻿namespace ProdManagment.Models;
 
-public class GetCategoryRequest
+public class DeleteCategoryRequest
 {
     public int Id { get; set; }
 }

@@ -4,12 +4,12 @@ namespace ProdManagment.Entity
 {
     public class Package
     {
-        //public Package()
-        //{
-        //    Products = new List<Product>();
-        //}
+        public Package()
+        {
+            Products = new List<Product>();
+        }
 
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [MaxLength(50)]
         public string Name { get; set; }

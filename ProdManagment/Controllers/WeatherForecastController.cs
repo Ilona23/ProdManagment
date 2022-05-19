@@ -60,7 +60,19 @@ namespace ProdManagment.Controllers
         //    return CreatedAtAction(nameof(GetById), new { id = category.Id }, category);
         //}
 
-        [HttpPost("createCategory")]
+        ////[HttpGet("{id}")]
+        ////public ActionResult GetCategory([FromBody] int id)
+        ////{
+        ////    var category = _categoryService.GetCategory(id);
+        ////    if (category == null)
+        ////    {
+        ////         return NotFound();
+        ////    }
+        ////    return Ok(category);
+        ////} 
+        
+
+                [HttpPost("createCategory")]
         public CreateCategoryResponse CreateCategory(CategoryModel request) => _categoryService.CreateCategory(request);
         //public async Task<CreateCategoryResponse> CreateCategory(CategoryModel request)
         //{

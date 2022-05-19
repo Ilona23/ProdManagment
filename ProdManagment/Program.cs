@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddSingleton<IMapper<ProdManagment.Entities.CategoryEntity, ProdManagment.Models.CategoryModel>, CategoryMapper>();
+builder.Services.AddScoped<IMapper<ProdManagment.Entities.Category, ProdManagment.Models.CategoryModel>, CategoryMapper>();
 builder.Services.AddDbContext<ProdManagementContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString("ProdManagementDatabase")));
 var app = builder.Build();

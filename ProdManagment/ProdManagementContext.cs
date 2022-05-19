@@ -7,7 +7,7 @@ namespace ProdManagment
 {
     public class ProdManagementContext : DbContext
     {
-        public DbSet<CategoryEntity> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Package> Packages { get; set; }
 
