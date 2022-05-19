@@ -7,7 +7,9 @@ namespace ProdManagment.Tests
         [Fact]
         public void GetCategory_ReturnsCategory()
         {
-
+            //arrange
+            //act
+            //assert
         }
     }
 }
